@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<!-- Fundo branco - primeira parte tela -->   
+    <LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"  android:minHeight="50dip" 
+    	android:orientation="vertical" android:layout_marginTop="15dip"
+    	android:background="@drawable/fundobranco_bg" android:layout_marginLeft="7dip" android:layout_marginRight="7dip">
+	
+		<LinearLayout 
+    		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    		android:orientation="horizontal"   android:layout_gravity="top" android:gravity="top" android:padding="6dip">
+	    	
+			<TextView  android:layout_height="wrap_content" android:layout_margin="5dip"
+	        		android:layout_width="wrap_content" android:padding="5px" android:textStyle="bold"
+	        		android:paddingLeft="3dip" android:paddingRight="3dip" android:textSize="12sp" android:gravity="left|center" android:layout_gravity="left|center"
+	        		android:id="@+id/nomeEndereco" android:text="@string/str_hidrometro_endereco" android:textColor="#000000" android:visibility="visible"/>
+			
+			<TextView android:layout_width="wrap_content" android:layout_height="30dip" 
+				    android:layout_margin="5dip" android:layout_marginLeft="12dip" 
+					android:background="@drawable/vermelho_bg" android:id="@+id/rota_finalizada"
+					android:paddingLeft="3dip" android:paddingRight="3dip" android:textSize="12sp" 
+					android:gravity="left|center" android:text="Rota Finalizada!" android:layout_gravity="left|center"
+					android:visibility="gone"/>
+	        
+	        <!-- Imovel revisitar -->
+	        <ImageView  android:layout_width="wrap_content" android:id="@+id/revisitarConta" android:src="@drawable/bolarevisitar" android:layout_marginLeft="6dip"
+					android:layout_marginTop="4dip"	android:layout_height="wrap_content" android:visibility="gone" />
+	        
+			<ImageView  android:layout_width="wrap_content" android:id="@+id/status"  android:layout_marginLeft="6dip"
+					android:layout_marginTop="4dip"	android:layout_height="wrap_content"  />
+		        		
+	        
+			<!-- Posicao Imovel Condominio -->		
+			<TextView android:layout_width="wrap_content" android:layout_height="30dip" 
+				    android:layout_margin="5dip" android:layout_marginLeft="12dip" 
+					android:background="@drawable/imovelcondominio_bg" android:id="@+id/posicaoCondominio"
+					android:paddingLeft="3dip" android:paddingRight="3dip" android:textSize="12sp" 
+					android:gravity="left|center" android:layout_gravity="left|center"
+					android:visibility="invisible"/>
+			
+		</LinearLayout>	
+	
+		<TextView android:layout_width="fill_parent" android:layout_marginTop="10dip" android:paddingLeft="6dip" android:paddingRight="6dip" 
+			android:layout_height="wrap_content" android:paddingTop="5dip" android:paddingBottom="5dip"  
+	        android:id="@+id/endereco" android:textColor="#0f0f0f" />   
+
+	</LinearLayout>
+	
+	
+	<!-- Fundo branco - segunda parte tela -->  
+	<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"  android:minHeight="225dip"
+    	android:orientation="vertical" android:layout_marginTop="5dip"  android:background="@drawable/fundobranco_bg" android:layout_marginLeft="7dip" android:layout_marginRight="7dip">
+	
+		<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"   
+	    	android:orientation="vertical" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" >
+	
+		    <LinearLayout style="@style/alinhaConta" >
+			    	
+			    <TextView android:layout_width="wrap_content" 
+			    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_leitura" android:textColor="#0f0f0f" />
+			
+				 <TextView android:id="@+id/leitura" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+			        android:textColor="#0f0f0f" />
+			
+			</LinearLayout>	
+					
+		    <LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >
+			    	
+			    <TextView android:layout_width="wrap_content" 
+			    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_consumo_agua" android:textColor="#0f0f0f" />
+			
+				 <TextView android:id="@+id/consumoAgua" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+			        android:textColor="#0f0f0f" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+	
+			<LinearLayout style="@style/alinhaConta"  >
+			    	
+			    <TextView android:layout_width="wrap_content" 
+			    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_consumo_tipo_agua" android:textColor="#0f0f0f" />
+			
+				 <TextView android:id="@+id/consumoTipoAgua" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+			        android:textColor="#0f0f0f" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >
+			    	
+			    <TextView android:layout_width="wrap_content" 
+			    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_anormalidade_agua" android:textColor="#0f0f0f" />
+			
+				 <TextView android:id="@+id/anormalidadeTipoAgua" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+			        android:textColor="#0f0f0f" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >
+			    	
+			    <TextView android:layout_width="wrap_content" 
+			    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_valor_agua" android:textColor="#0f0f0f" />
+			
+				 <TextView android:id="@+id/valorAgua" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+			        android:textColor="#0f0f0f" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta"  >
+			    	
+			    <TextView android:layout_width="wrap_content" 
+			    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_leitura_poco" android:textColor="#0f0f0f" />
+			
+				 <TextView android:id="@+id/leituraPoco"
+			        android:layout_width="wrap_content" android:textSize="15dip" android:layout_height="wrap_content"
+			        android:textColor="#0f0f0f" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >
+			    	
+			    <TextView android:layout_width="wrap_content" 
+			    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_consumo_esgoto" android:textColor="#0f0f0f" />
+			
+				 <TextView android:id="@+id/consumoEsgoto" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+			        android:textColor="#0f0f0f" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >    
+			    
+				    <TextView android:layout_width="wrap_content" android:layout_weight="0.3"
+				    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_consumo_tipo_esgoto" android:textColor="#0f0f0f" />
+				
+					 <TextView android:layout_weight="0.7" android:id="@+id/consumoTipoEsgoto" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+				        android:textColor="#0f0f0f" />
+				
+			</LinearLayout>
+			
+			<!--Anormalidade Esgoto  -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >    
+			    
+				    <TextView android:layout_width="wrap_content" android:layout_weight="0.3"
+				    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_anormalidade_esgoto" android:textColor="#0f0f0f" />
+				
+					 <TextView android:layout_weight="0.7" android:id="@+id/anormalidadeEsgoto" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+				        android:textColor="#0f0f0f" />
+				
+			</LinearLayout>
+			
+			<!-- Valor Esgoto -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >    
+			    
+				    <TextView android:layout_width="wrap_content" android:layout_weight="0.3"
+				    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_valor_esgoto" android:textColor="#0f0f0f" />
+				
+					 <TextView android:layout_weight="0.7" android:id="@+id/valorEsgoto" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+				        android:textColor="#0f0f0f" />
+				
+			</LinearLayout>
+						
+			<!-- Dias Consumo -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >    
+			    
+				    <TextView android:layout_width="wrap_content" android:layout_weight="0.3"
+				    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_dias_consumo" android:textColor="#0f0f0f" />
+				
+					 <TextView android:layout_weight="0.7" android:id="@+id/diasConsumo" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+				        android:textColor="#0f0f0f" />
+				
+			</LinearLayout>
+			
+			<!-- Valor débito -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >    
+			    
+				    <TextView android:layout_width="wrap_content" android:layout_weight="0.3"
+				    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_valor_debito" android:textColor="#0f0f0f" />
+				
+					 <TextView android:layout_weight="0.7" android:id="@+id/valorDebito" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+				        android:textColor="#0f0f0f" />
+				
+			</LinearLayout>
+			
+			<!-- Valor crédito -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout> 
+			
+			<LinearLayout style="@style/alinhaConta" >    
+			    
+				    <TextView android:layout_width="wrap_content" android:layout_weight="0.3"
+				    	android:padding="5dip"  android:layout_height="wrap_content" android:text="@string/str_conta_valor_credito" android:textColor="#0f0f0f" />
+				
+					 <TextView android:layout_weight="0.7" android:id="@+id/valorCredito" android:gravity="center|right" 
+			        android:layout_width="fill_parent" android:textSize="15dip" android:layout_height="wrap_content"
+				        android:textColor="#0f0f0f" />
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+	</LinearLayout>	
+	
+	<!-- Valor total -->
+	<LinearLayout android:layout_width="fill_parent" 
+	    android:gravity="center" android:layout_gravity="center"
+	    android:layout_marginTop="8dip" android:layout_height="40dip"   
+    	android:orientation="horizontal" android:layout_marginBottom="17dip" android:background="@drawable/fundobranco_bg" 
+    	android:layout_marginLeft="7dip" android:layout_marginRight="7dip">		 
+		
+		<TextView android:textColor="#0f0f0f" android:text="@string/str_conta_valor" android:layout_width="wrap_content" 
+		    android:textSize="20dip" android:layout_height="wrap_content" />
+		
+		<TextView android:textColor="#0f0f0f" android:textSize="20dip"
+				 android:id="@+id/valor" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		
+	</LinearLayout>
+	
+</LinearLayout>

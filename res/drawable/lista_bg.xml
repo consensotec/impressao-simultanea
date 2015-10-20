@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- 
+	Copyright (c) Josh Clemm 2010
+	 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<gradient android:startColor="#ffffff" android:centerColor="#e6eaed"
+		android:endColor="#bec2c6" android:angle="-90" />  
+	
+	<corners android:radius="6dp" />	         
+
+	
+</shape>

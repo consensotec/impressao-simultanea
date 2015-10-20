@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:background="@drawable/fundotela"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"  >
+    
+    <TextView
+	        android:layout_width="fill_parent" 
+	        android:textColor="#ffffff"
+	        android:layout_height="wrap_content"
+	       	android:padding="6dp"
+	        android:background="@drawable/fundoteste"
+	        android:textSize="20sp" 
+	        android:layout_gravity="center_horizontal"
+	        android:gravity="center_horizontal"
+	        android:text="@string/str_menu_principal"/>
+    
+ <ListView
+		android:id = "@+id/listMenu"
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+	></ListView>  	
+	
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+ android:minHeight="130dp" 
+ android:layout_width="fill_parent" android:layout_height="wrap_content" 
+ android:orientation="vertical" android:layout_marginBottom="-500dp">
+ 
+<LinearLayout android:minHeight="98dp" android:layout_marginTop="14dp"  
+ android:layout_width="fill_parent" android:layout_height="wrap_content" 
+ android:orientation="horizontal" >
+ 
+    <TextView android:id="@+id/status" android:background="@drawable/bgimovelparado" 
+        android:textColor="#ffffff" android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+     
+    <LinearLayout android:layout_width="fill_parent" 
+		android:layout_height="match_parent" android:background="@drawable/lista_bg"
+		android:orientation="vertical">
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+			<TextView android:id="@+id/posicao" android:background="@drawable/bgnumeroparado" 
+			    android:layout_marginTop="6dp" android:textColor="#ffffff" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+			<TextView android:layout_marginLeft="5dp" android:textColor="#000000" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textStyle="bold" android:id="@+id/nome" android:layout_marginTop="6dp"/>
+		</LinearLayout>
+		<LinearLayout android:layout_marginTop="5dp" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		    android:minHeight="48dp" android:orientation="horizontal" >
+		    
+		    <!-- Posição do Imóvel Condomínio -->
+		    <TextView android:visibility="invisible" android:textColor="#ffffff"
+		        	android:padding="3dp"
+		        	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				    android:background="@drawable/bgcondominio" android:id="@+id/posicaoCondominio"					 
+					 />
+		    
+			<TextView android:layout_marginLeft="9dp" android:text="Rua:" android:textColor="#000000" android:textStyle="bold"
+				 android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+		 
+			<TextView android:layout_marginLeft="2dp" android:id="@+id/endereco" android:textColor="#000000" android:textSize="12sp"
+				 android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+		</LinearLayout>
+		 
+		
+	</LinearLayout>
+	 	
+</LinearLayout>
+</LinearLayout>
+	
+ 

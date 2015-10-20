@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:background="@drawable/fundotela"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/imovel_bg" android:minHeight="50dp" android:paddingTop="7dp">
+   		<EditText android:layout_weight="0.5" android:id="@+id/busca" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_gravity="center_vertical" 
+   			android:gravity="center" android:paddingTop="4dp" android:paddingLeft="10dp"/>
+   		<ImageButton android:background="#80000000" android:src="@drawable/btlupa" android:id="@+id/procurar" android:layout_width="wrap_content"
+    		android:layout_height="43dp" android:layout_gravity="center" android:gravity="center" />
+   		<Spinner android:layout_weight="0.3" android:layout_marginLeft="5dp" android:id="@+id/buscaTipo" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+   			android:layout_gravity="center_horizontal" android:gravity="center"/>
+   	</LinearLayout>    
+
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:layout_margin="10dp" >
+		
+		
+	    <LinearLayout android:background="@drawable/titulo_bg"
+	    android:layout_width="wrap_content"
+	    android:layout_height="30dp" android:layout_marginRight="10dp"
+	    android:orientation="vertical" android:layout_gravity="left" android:gravity="left" >
+	    
+		    <TextView android:textColor="#ffffff" android:textStyle="bold" android:textSize="14dp" android:text="@string/str_imoveis_barra_titulo"
+		    android:layout_marginTop="5dp" android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_gravity="center"/>
+	    		
+	    </LinearLayout>
+		
+	    
+    		<Spinner android:visibility="gone" android:id="@+id/legendaSpinner"  android:textColor="#ffffff" android:textSize="14sp" android:layout_weight="0.35"
+		     android:layout_height="40dp"  android:paddingLeft="20dp" android:layout_width="wrap_content" android:prompt="@string/str_imoveis_legenda_titulo"/>
+	    
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical" android:layout_margin="10dp"  android:layout_marginBottom="-88dp">
+  	   
+	    
+		<ListView
+			android:id = "@+id/listImoveis"
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+		></ListView>  	
+	</LinearLayout>
+		
+	
+</LinearLayout>
+

@@ -1,0 +1,320 @@
+<resources>
+
+	<string name="app_name">GSAN - Impressão Simultânea</string>
+	<string name="titulo_principal">Bem vindo ao Sistema de Impressão Simultânea</string>
+	
+	<string name="db_erro">Erro ao acessar o banco de dados</string>
+	<string name="db_erro_inserir_registro">Erro ao inserir o registro</string>
+	<string name="db_erro_deletar_registro">Erro ao apagar o registro</string>
+	<string name="db_erro_pesquisar_registro">Erro ao consultar o registro</string>
+	
+	<!-- Geral -->	
+	<string name="str_sim">Sim</string>
+	<string name="str_nao">Não</string>
+	<string name="str_geral_bt_cancela">Cancelar</string>
+	<string name="str_geral_bt_confirmar">Confirmar</string>
+	<string name="str_ativar">Ativar</string>
+	<string name="str_desativadar">Desativar</string>
+		
+	<!-- Login -->
+	<string name="str_login_user">Login: </string>
+	<string name="str_login_pass">Senha: </string>
+	<string name="str_login_login">ENTRAR</string>
+	<string name="str_sair_login">SAIR</string>
+	<string name="str_login_alert_title">ISC</string>
+	<string name="str_login_alert_wrong_date">A data atual do celular não está na faixa de diferença de dias aceitavéis.</string>
+	<string name="str_versao_desatualizada">Versão desatualizada! A aplicação será fechada.</string>
+	<string name="str_login_invalido">O login %1$s não existe. Informe outro.</string>
+	<string name="str_senha_invalida">Senha inválida.</string>
+	<string name="str_login_branco">Informe o login.</string>
+	<string name="str_senha_branco">Informe a senha</string>
+	<string name="str_login_rota_completa_pendente">Rota pendente com arquivo completo gerado. Enviar o arquivo ao supervisor&#8230;</string>
+	<string name="str_login_rota_pendente">Rota pendente, tentando enviar&#8230;</string>
+	   	
+	<!--  Foto -->
+	<string name="str_matricula">Matrícula</string>
+	<string name="str_data">Data</string>
+	<string name="str_imovel">Imóvel</string>
+	<string name="str_anormalidade">Anormalidade</string>
+	<string name="str_informe_foto_anormalidade_imovel">Informe foto da anormalidade do imóvel.</string>
+
+	<!-- Impressora -->
+	<string name="str_procurar_impressora">Procurar Impressoras</string>
+    <string name="bt_not_enabled_leaving">Bluetooth não esta habilitado.</string>
+    <string name="titulo_conectando">Conectando..</string>
+    <string name="procurando_dispositivos">Procurando novos dispositivos&#8230;</string>
+    <string name="selecionar_dispositivo">Selecione a impressora a conectar.</string>
+	<string name="dispositivo_nao_pareado">Nenhuma impressora pareada.</string>
+    <string name="sucesso_conecao">Impressora Configurada Com Sucesso</string>
+    <string name="falha_conecao">Não foi possivel se conectar à impressora.</string>
+	<string name="str_nenhuma_impressora_configurada">Nenhuma impressora configurada.</string>
+	<string name="str_lista_impressora_titulo">LISTA DE IMPRESSORAS</string>    
+	<string name="str_erro_impressora">%1$s Deseja tentar novamente ?</string>
+	<string name="str_parar_pesquisa_impressora">Parar</string>
+	<string name="str_pesquisar_novamente_impressora">Pesquisar Novamente</string>
+	
+	<!-- MENU -->
+	<string name="str_menu_principal">Menu Principal</string>
+	<string name="str_menu_lista">Lista de Imóveis</string>
+	<string name="str_menu_lista_legenda">Listagem dos imóveis cadastrados</string>
+	<string name="str_menu_finaliza">Finalizar roteiro </string>
+	<string name="str_menu_finaliza_legenda">Selecione o roteiro para ser finalizado</string>
+	<string name="str_menu_consulta">Consultar Imóveis </string>
+	<string name="str_menu_consulta_legenda">Consulta imóveis de acordo com o filtro</string>
+	<string name="str_menu_impressora">Selecionar Impressora</string>
+	<string name="str_menu_impressora_legenda">Configurar Nova impressora</string>
+	<string name="str_menu_relatorio">Relatórios</string>
+	<string name="str_menu_relatorio_legenda">Gerar relatório e resumo por quadra</string>
+	<string name="str_menu_apagar">Apagar tudo</string>
+	<string name="str_menu_apagar_legenda">Apaga todos os dados</string>
+	<string name="str_menu_finaliza_incompleto">Finalizar roteiro incompleto</string>
+	<string name="str_menu_finaliza_incompleto_legenda">Selecione o roteiro para ser finalizado mesmo estando incompleto</string>
+	<string name="str_menu_enviar_finalizados">Enviar imóveis lidos</string>
+	<string name="str_menu_enviar_finalizados_legenda">Envia imóveis lidos</string>
+	<string name="str_menu_roteiro_offline">Tornar roteiro offline</string>
+	<string name="str_menu_roteiro_offline_legenda">Torna o roteiro offline</string>
+	<string name="str_menu_roteiro_online">Tornar roteiro online</string>
+	<string name="str_menu_roteiro_online_legenda">Torna o roteiro online</string>
+	<string name="str_menu_gerar_retorno">Gerar arquivo retorno completo</string>
+	<string name="str_menu_gerar_retorno_legenda">Gera arquivo retorno</string>
+	<string name="str_menu_rota">Rota de marcação</string>
+	<string name="str_menu_rota_legenda">%1$s Rota de marcação</string>
+	<string name="str_menu_confirma_apagar">Tem certeza que deseja apagar os dados?</string>
+	<string name="str_menu_confirma_finalizar">A rota será finalizada e o aplicativo será fechado. Digite a senha se tem certeza.</string>
+	<string name="str_menu_confirma_enviar">Os imóveis lidos serão enviados. Digite a senha se tem certeza.</string>
+	<string name="str_menu_contraste">Definir Contraste</string>
+	
+	<string name="str_menu_transformar_online">Tem certeza que deseja transformar o roteiro para Online?</string>
+	<string name="str_sucesso_transformar_roteiro_online">Roteiro transformado para OnLine com sucesso!</string>
+	<string name="str_menu_transformar_offline">Tem certeza que deseja transformar o roteiro para Offline?</string>
+	<string name="str_sucesso_transformar_roteiro_offline">Roteiro transformado para OffLine com sucesso!</string>
+	<string name="str_menu_alert_nao_lido">Não há imóveis lidos e não enviados</string>
+	<string name="str_menu_alert_imoveis_finalizar">Erro Roteiro, Ainda há imóveis a percorrer! %1$s de %2$s</string>
+	<string name="str_menu_sair">Sair</string>
+	<string name="str_menu_sair_legenda">Sair do sistema</string>
+	<string name="str_menu_confirma_sair">Deseja sair do sistema?</string>
+	<string name="str_menu_inverter_roteiro">Inverter Roteiro</string>
+	<string name="str_menu_inverter_roteiro_legenda">Inverter a sequencia de leitura dos imóveis.</string>
+	<string name="str_menu_roteiro_invertido">Roteiro invertido com sucesso.</string>
+	<string name="str_menu_exportar_bd">Exportar Base de Dados</string>
+	<string name="str_menu_exportar_bd_legenda">Exporta base de dados para cartão de memória do celular</string>
+	<string name="str_alert_exportar_bd">Base de Dados exportada com sucesso!</string>
+	<string name="str_menu_contraste_legenda">Define o nível de Contraste a ser utilizado durante a impressão da conta</string>
+	    
+	    <!-- Rota de Marcação -->
+	    <string name="str_rota_marcacao_desativar">A marcação de rota já está ativa, você confirma que a marcação será desativada?</string>
+	    <string name="str_rota_marcacao_exite_imovel_calculado">Não é possível ativar rota de marcação, já existe imóvel com leitura realizada.</string>
+	    <string name="str_rota_marcacao_ativar">Deseja ativar rota de marcação?</string>
+	    <string name="str_rota_marcacao_habilitada">Rota de marcação ativa.</string>
+	    <string name="str_rota_marcacao_desabilitada">Rota de marcação desativada.</string>
+	
+	<!-- Apagar tudo -->
+	<string name="str_susseco_apagar_tudo">Banco de dados apagado</string>
+	<string name="str_falha_apagar_tudo">Banco de dados não removido</string>
+	
+	<!-- Arquivo de retorno -->
+	<string name="str_menu_alert_apagar_tudo">A ROTA SERÁ FINALIZADA E O APLICATIVO SERÁ FECHADO, TEM CERTEZA?</string>
+		
+	<!-- Tabs -->	
+	<string name="str_tab_hidrometro">Água</string>
+	<string name="str_tab_poco">Poço</string>
+	
+	<string name="str_tab_tab4name">tabInfo</string>
+	<string name="str_tab_conta">Conta</string>
+	<string name="str_tab_info">Informações Gerais</string>
+	<string name="str_tab_tabConta">tabConta</string>
+	<string name="str_tab_menu_imprimir">Imprimir</string>
+	<string name="str_tab_menu_ratear">Ratear</string>
+	<string name="str_tab_menu_calcular">Calcular</string>
+	<string name="str_tab_menu_voltar">Voltar Menu Principal</string>
+		
+	<!-- Impressão -->	
+	<string name="str_impressao_problema">Problema no envio,reenviar?</string>
+	<string name="str_impressao_erro">Ocorreu um erro ao imprimir.</string>
+	
+	<!-- Hidrômetro -->	
+	<string name="str_hidrometro_leitura">Leitura:</string>
+	<string name="str_hidrometro_anormalidade">Anormalidade:</string>
+	<string name="str_hidrometro_local">Loc Inst.:</string>
+	<string name="str_hidrometro_endereco">Endereço</string>
+	<string name="str_hidrometro_hidrometro">Hidrômetro:</string>
+	<string name="str_hidrometro_alert_mes_anterior">Este imóvel não apresentou anormalidade informada no mês anterior. Deseja confirmar o código?</string>
+	<string name="str_hidrometro_alert_mes_anterior_diferente">O código informado é diferente do mês anterior. Deseja confirmar o código?</string>
+	<string name="str_hidrometro_alert_hidrometro_calcada">O hidrômetro se localiza na calçada. Deseja confirmar o código?</string>
+	<string name="str_hidrometro_alert_hidrometro_substituido">O hidrômetro foi substituído no mês anterior. Deseja confirmar o código</string>
+	<string name="str_hidrometro_alert_campos_branco">O hidrômetro foi substituído no mês anterior. Deseja confirmar o código</string>
+	<string name="str_hidrometro_alert_anormalidade_inativa">Anormalidade inativa.</string>
+	<string name="str_hidrometro_alert_agua_igual_poco">Leitura de água igual a de poço. Deseja confirmar?</string>
+	<string name="str_hidrometro_rota">Rota:</string>
+	
+	<!--  Lista imóveis -->
+	<string name="str_imoveis_hidrometro_agua">Hidrômetro Água:</string>
+	<string name="str_imoveis_barra_titulo">LISTA DE IMÓVEIS</string>
+	<string name="str_imoveis_hidrometro_esgoto">Hidrômetro Esgoto:</string>
+	<string name="str_imoveis_spinner_todos">Todos</string>
+	<string name="str_imoveis_spinner_posicao">Posição</string>
+	<string name="str_imoveis_spinner_sequencial_rota">Sequencial Rota</string>
+	<string name="str_imoveis_spinner_imoveis_revisitar">Imóveis a revisitar</string>
+	<string name="str_imoveis_spinner_quadra">Quadra</string>
+	<string name="str_imoveis_spinner_hidrometro">Hidrômetro</string>
+	<string name="str_imoveis_spinner_imoveis_nao_lidos">Imóveis não lidos</string>
+	<string name="str_imoveis_alert_pesquisa">Pesquisa sem sucesso.</string>
+	<string name="str_imoveis_alert_pesquisa_vazia">Informe o dado de pesquisa.</string>
+	<string name="str_imoveis_legenda_titulo">Legendas</string>
+	<string name="str_imoveis_legenda_vermelho">Vermelho: Imóvel não visitado.</string>
+	<string name="str_imoveis_legenda_amarelo">Amarelo: Conta calculada mas não impressa.</string>
+	<string name="str_imoveis_legenda_verde">Verde: Conta calculada e impressa.</string>
+	<string name="str_imoveis_legenda_azul">Azul: Imóvel é um condomínio.</string>
+	
+	<!-- Conta -->
+	<string name="str_conta_inscricao">Inscrição:</string>
+	<string name="str_conta_leitura">Leitura Faturada de Água:</string>
+	<string name="str_conta_consumo_agua">Consumo de Água:</string>
+	<string name="str_conta_consumo_tipo_agua">Consumo Tipo Água:</string>
+	<string name="str_conta_consumo_tipo_esgoto">Consumo Tipo Esgoto:</string>
+	<string name="str_conta_anormalidade_agua">Anorm. Cons. Água:</string>
+	<string name="str_conta_anormalidade_esgoto">Anorm. Cons. Esgoto:</string>
+	<string name="str_conta_valor_agua">Valor da Água: R$</string>
+	<string name="str_conta_leitura_poco">Leitura Faturada Poço:</string>
+	<string name="str_conta_valor">Valor total: R$</string>
+	<string name="str_conta_valor_esgoto">Valor de esgoto: R$</string>
+	<string name="str_conta_dias_consumo">Dias de consumo:</string>
+	<string name="str_conta_consumo_esgoto">Consumo Esgoto:</string>
+	<string name="str_imovel_nao_emitido">Imóvel não pode ser emitido!</string>
+	<string name="str_valor_menor_permitido">Valor da conta menor que o valor permitido!</string>
+	<string name="str_valor_maior_permitido">Valor acima do valor permitido, entrega posterior!</string>
+	<string name="str_anormalidade_nao_impressao">Anormalidade não permite impressão.</string>
+	<string name="str_imovel_nao_calculado">Imóvel não foi calculado.</string>
+	<string name="str_conta_valor_debito">Valor débito: R$</string>
+	<string name="str_conta_valor_credito">Valor créditos: R$</string>
+	
+		
+	<!-- Info Gerais -->
+	<string name="str_info_gerais">Informações gerais do imóvel</string>
+	<string name="str_info_endereco">Endereço:</string>
+	<string name="str_info_ligacao_agua">Sit. Lig. Água:</string>
+	<string name="str_info_usuario">Nome do Usuário:</string>
+	<string name="str_info_ligacao_esgoto">Sit. Lig. Esgoto:</string>
+	<string name="str_info_economias">Economias</string>
+	<string name="str_info_subcategoria">SubCategoria</string>
+	<string name="str_info_codigo">Cod.Cat</string>
+	<string name="str_info_matricula">Matrícula:</string>
+	<string name="str_info_inscricao">Inscrição:</string>
+	<string name="str_info_lig_agua_potencial">Potencial</string>
+	<string name="str_info_lig_agua_factivel">Factível</string>
+	<string name="str_info_lig_agua_ligado">Ligado</string>
+	<string name="str_info_lig_agua_ligado_analise">Ligado em Análise</string>
+	<string name="str_info_lig_agua_cortado">Cortado</string>
+	<string name="str_info_lig_agua_suprimido">Suprimido</string>
+	<string name="str_info_lig_agua_suprimido_parcialmente">Suprimido Parcialmente</string>
+	<string name="str_info_lig_agua_suprimido_parcialmente_pedido">Suprimido Parcialmente Pedido</string>
+	<string name="str_info_lig_agua_cancelamento">Em Cancelamento</string>	
+	<string name="str_info_lig_esgoto_potencial">Potencial</string>
+	<string name="str_info_lig_esgoto_factivel">Factivel</string>
+	<string name="str_info_lig_esgoto_ligado">Ligado</string>
+	<string name="str_info_lig_esgoto_fiscalizacao">Em Fiscalização</string>
+	<string name="str_info_lig_esgoto_ligacao_fora_uso">Ligação Fora de Uso</string>
+	<string name="str_info_lig_esgoto_tamponado">Tamponado</string>
+	<string name="str_info_lig_esgoto_conversao">Conversão</string>
+	<string name="str_sequencial">Sequencial de Rota:</string>
+	
+	 <!-- FileSelector -->
+    <string name="str_selecionar_arquivo_title">Arquivos offline disponíveis</string>
+    <string name="str_selecionar_arquivo_loading">Carregando arquivo offline. Por favor, aguarde!</string>
+    <string name="str_sair_carregamento">Sair</string>
+  	
+	<!-- DOWNLOAD ACTIVITY-->
+	<string name="str_download_erro_problema_desconhecido">Houve um problema desconhecido carregar os dados. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_download_erro_abortar">Enviando para tela de escolha do arquivo</string>
+    <string name="str_download_progress_titulo">Carregando o arquivo. Por favor, aguarde&#8230;</string>
+    <string name="str_download_alert_file">Erro ao carregar arquivo</string>
+    <string name="str_download_servidor_offline">Servidor offline</string>
+    <string name="str_alert_download_title"> Download de nova versão</string>
+    <string name="str_error_aborted">Você é obrigado a baixar e instalar a versão</string>   
+    <string name="str_alert_download_download_error"> Não há nova versão disponível.</string>  
+    <string name="str_alert_verificar_versao_erro">Houve um erro ao baixar o arquivo.</string>
+    <string name="str_alert_download_apk_erro">Houve um erro ao verificar se há nova versão.</string>
+    <string name="str_error_nofile">Nenhum arquivo liberado para o celular. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_error_off">O aparelho está sem sinal ou o servidor está OFFLINE. Tente de novo.</string>
+    <string name="str_error_download">Houve um problema ao baixar o arquivo. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_error_laoding">Houve um problema ao carregar o arquivo. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_error_route_signal">Houve um erro ao tentar marcar o arquivo para EM CAMPO. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_error_carregar_arquivo_registro_duplicado">Houve um problema ao carregar o arquivo. O arquivo será carregado novamente</string>
+   
+    
+	<!-- Impressão de imóvel condominio -->
+	<string name="str_sucesso_impressao">As últimas %1$s contas foram emitidas com sucesso?</string>
+	<string name="str_reemitir">Reemitir últimas %1$s contas?</string>
+	<string name="str_atencao">Atenção</string>
+	<string name="str_imov_condominio">Existem imóveis ainda não calculados nesse condomínio.</string>
+	<string name="str_imov_condominio_micro_modificado">Leitura alterada. O imovel não pode ser impresso.</string>
+	<string name="str_confirmar_ocupacao_imovel">Imóvel está ocupado?</string>
+	<string name="str_hidr_detect_sem_consumo">HIDR. DETECT. SEM CONSUMO</string>
+	
+	<!-- erros -->
+    <string name="str_erro_generico">Houve um problema desconhecido ao carregar os dados. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_erro_generico_envio">Não foi possível enviar o arquivo de retorno</string>
+    <string name="str_erro_generico_envio_default">Não foi possível enviar o arquivo de retorno. </string>
+    <string name="str_erro_download">Houve um problema ao baixar o arquivo. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_erro_carregando">Houve um problema ao carregar o arquivo. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_erro_off">O aparelho está sem sinal ou o servidor está OFFLINE. Tente de novo.</string>
+    <string name="str_erro_sinal_campo">Houve um erro ao tentar marcar o arquivo para EM CAMPO. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_erro_sem_arquivo">Nenhum arquivo liberado para o celular. Encaminhando para carregamento OFFLINE</string>
+    <string name="str_erro_aborted">Operação Cancelada</string>
+    <string name="str_erro_retorno">Houve um erro na geração do arquivo de retorno</string>
+    <string name="str_erro_finalizacao">Não foi possivel enviar sinal de finalização ao GSAN. Favor finalizar novamente.</string>
+    <string name="str_erro_nao_calculado">O imóvel de matricula %1$s não está calculado. Favor recalcular</string>
+    <string name="str_erro_nao_impresso">O imovel de matrícula : %1$s não foi impresso, deseja imprimi-lo?"</string>
+    <string name="str_erro_revisitar">Existe imóvel a revisitar. Deseja ir agora?</string>
+    <string name="str_erro_quantidade_diferente">A quantidade de imóveis enviados não corresponde ao esperado</string>
+    <string name="str_erro_arquivo_finalizado">O arquivo a ser processado ja foi finalizado.</string>
+    
+      
+    <!-- Finalizar Arquivo -->
+    <string name="str_progress">Enviando&#8230;</string>
+    <string name="str_progress_line">Carregando o arquivo. Por favor, aguarde&#8230;</string>
+    <string name="str_enviados_alert">Todos os imóveis lidos foram enviados&#8230;</string>
+    <string name="str_bt_cancela">Cancelar</string>
+    <string name="str_finalizacao_alert">Roteiro finalizado, a  aplicação será fechada&#8230;</string>
+    <string name="str_bt_continuar">Continuar</string>
+    <string name="str_bt_pausar">Pausar</string>
+    <string name="str_nenhum_imovel_lido">Arquivo não pode ser finalizado. Nenhum Imóvel lido.</string>
+    <string name="str_finalizar_offline_sucesso">Rota finalizada com sucesso!</string>
+    <string name="str_finalizar_completo_erro">Arquivo Completo Gerado com sucesso. Encaminhe para o supervisor</string>
+    <string name="str_encaminhar_arquivo_completo">Encaminhando para geração do arquivo de retorno completo.</string>
+    
+    
+    <!-- Fotos -->
+    <string name="str_aguarde">Aguarde&#8230;</string>
+    <string name="str_confirma_envio_fotos">Confirma o envio das fotos?</string>
+    <string name="str_foto_obrigatorio_agua">Registrar fotos para essa anormalidade de água. Deseja registrar agora?</string>
+    <string name="str_foto_obrigatorio_poco">Registrar fotos para essa anormalidade de poço. Deseja registrar agora?</string>
+    <string name="str_foto_obrigatorio_agua_substituir">Já existe foto para essa anormalidade de água. Deseja substituir?</string>
+    <string name="str_foto_obrigatorio_poco_substituir">Já existe foto para essa anormalidade de poço. Deseja substituir?</string>
+    <string name="obrigatorio">É obrigatório:</string>
+    
+    <!-- extras -->
+    <string name="str_extra_tipo_finalizacao">tipoFinalizacao</string>
+    <string name="str_extra_msg_erro">msgErro</string>    
+    <string name="str_extra_nome_arquivo">nomeArquivo</string>    
+    <string name="str_extra_progresso">progresso</string>    
+    <string name="str_extra_alert_erro">msgErro</string>    
+    <string name="str_extra_alert_revisitar">msgRevisitar</string>    
+
+     <!-- Relatorios -->    
+    <string name="str_relatorio_resumo_quadra">Resumo Por Quadra</string>
+    <string name="str_total_imoveis">Total de imóveis: </string>
+    <string name="str_total_imoveis_a_visitar">Total de imóveis a visitar: </string>
+    <string name="str_total_imoveis_visitados">Total de imóveis visitados: </string>
+    <string name="str_total_com_anormalidade">Total visitado com Anorm.: </string>
+    <string name="str_total_sem_anormalidade">Total visitado sem Anorm.: </string>
+    <string name="str_total_ja_visitado">Total já visitado: </string>
+    
+    <!-- Camera -->
+    <string name="str_camera_sd">Seu SDCARD não está disponível. </string>
+    <string name="str_apagar_dados">Apagar Dados</string>
+    
+    <!-- Constraste -->
+    <string name="str_constrast_label">Constraste</string>
+    
+</resources>

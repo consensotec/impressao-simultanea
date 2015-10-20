@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.br.ipad.isc"
+    android:versionCode="32101"
+    android:versionName="3.2.10.1">
+
+   	<uses-permission android:name="android.permission.WRITE_OWNER_DATA" /> 
+	<uses-permission android:name="android.permission.READ_OWNER_DATA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.SET_DEBUG_APP" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    
+    
+    <application  android:theme="@style/TransparentListView"
+        android:icon="@drawable/ic_launcher" android:windowSoftInputMode="adjustPan"
+        android:label="@string/app_name" android:screenOrientation="portrait">
+         <activity
+            android:name=".gui.MenuActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".gui.ControladorAlertaActivity"
+            android:noHistory="true"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+      
+        <activity
+            android:name=".gui.CameraActivity" 
+            android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gui.ImagemSalvarActivity" 
+            android:noHistory="true"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    
+        <activity
+            android:name=".gui.ContaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+            
+                 <!--    <action android:name="android.intent.action.MAIN" />
+
+             <category android:name="android.intent.category.LAUNCHER" /> 
+            <action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" />  --> 
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gui.CarregarArquivoOnlineActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+		<activity
+        	android:name=".gui.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>  
+            		<action android:name="android.intent.action.DEFAULT" /> 
+					<category android:name="android.intent.category.DEFAULT" /> 
+            </intent-filter>
+        </activity>
+        
+        <!-- 
+        <activity
+            android:name=".testes.ConsumoAnormalidadeAcaoTeste"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->  
+          <activity
+            android:name=".gui.ListaImoveisActivity" android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait" android:label="@string/app_name" 
+             >
+            <intent-filter>,
+				<category android:name="android.intent.category.DEFAULT" /> 
+		        <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".gui.FotoActivity"
+			android:screenOrientation="portrait" android:noHistory="false"
+			>
+			<intent-filter>
+			<!--
+                   <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+			-->
+				<action android:name="android.intent.action.DEFAULT" />
+				<category android:name="android.intent.category.DEFAULT" />
+				
+			</intent-filter>
+		</activity>
+		
+         <activity
+            android:name=".gui.InformacoesGeraisActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+        
+         <activity
+            android:name=".gui.HidrometroAguaActivity"
+            android:label="@string/app_name"
+			android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".gui.HidrometroEsgotoActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".gui.DadosImovelActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".gui.SelecionarArquivoActivity" android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:label="@string/app_name">
+            <intent-filter>
+ 				<action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".gui.DownloadArquivoActivity"
+            android:noHistory="true" android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+       
+
+             
+        <activity
+            android:name=".gui.ListaImpressorasActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        
+       <activity android:name=".gui.TabsActivity"
+			android:configChanges="orientation" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+       	<activity 
+       	    android:noHistory="true"
+       	    android:name=".gui.RateioActivity"
+			android:configChanges="orientation" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<activity 
+		    android:noHistory="true"
+		    android:name=".gui.FinalizaArquivoActivty"
+			android:configChanges="orientation" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+       	    <activity
+            android:name=".gui.DownloadApkActivity"
+            android:noHistory="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity
+            android:name=".gui.RelatorioActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		    <activity
+            android:name=".gui.RelatorioPorQuadraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity 
+		    android:name=".gui.ConstrasteActivity"
+			android:configChanges="orientation" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>		    
+		    
+    </application>
+
+
+    <!-- Features -->
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	
+	<!-- Bluetooth -->
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    
+   <supports-screens android:smallScreens="true" 
+			          android:normalScreens="true" 
+			          android:largeScreens="true"
+			          android:anyDensity="true" />
+    
+</manifest>

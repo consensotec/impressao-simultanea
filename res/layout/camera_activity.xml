@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:id="@+id/picScreen">
+
+	<com.br.ipad.isc.gui.CustomDrawableView
+		android:id="@+id/preview" android:background="@android:color/transparent"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_gravity="right"
+		android:gravity="right" android:layout_marginTop="10dip" android:layout_marginRight="6dip">
+		
+		<Button android:gravity="right" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:background="@drawable/camerabt" android:layout_gravity="right" 
+			android:id="@+id/btTirarFoto"></Button>
+	</LinearLayout>
+
+</RelativeLayout>
