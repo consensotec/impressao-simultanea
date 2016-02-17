@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+            android:layout_height="fill_parent">
+            
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="#FFFFFF" 
+                  android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+       <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 android:layout_width="fill_parent" android:layout_height="wrap_content"
+			 android:stretchColumns="1">
+			<TableRow android:background="#353535" android:paddingTop="9px">
+				<!-- ID do Imóvel -->
+				<TextView android:id="@+id/imovel" android:text="@string/str_matricula" 
+						  android:layout_marginRight="2px" android:textStyle="bold" />
+				<TextView android:id="@+id/imovelText" />
+				
+				<!-- Data -->
+				<TextView android:id="@+id/date" android:text="@string/str_data" 
+						  android:layout_marginRight="2px" android:textStyle="bold" />
+				<TextView android:id="@+id/dateText" />
+			</TableRow>
+		</TableLayout>
+                  
+        <ImageView android:src="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	    
+        <!-- Frente da Casa -->
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" 
+                      android:id="@+id/llImovel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    
+	    	<ImageView android:id="@+id/imgImovel" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                       android:layout_marginRight="30px" android:layout_marginTop="15px" android:layout_marginBottom="15px" />
+	    	
+	    	<TextView android:id="@+id/imovelTitulo" android:textColor="#FFFFFF" android:textStyle="bold" 
+                      android:text="@string/str_imovel" android:paddingTop="25px" android:layout_width="fill_parent" 
+                      android:layout_height="wrap_content" />
+			   			
+	    </LinearLayout>
+	    <ImageView android:src="@drawable/line" android:layout_width="fill_parent"  android:layout_height="wrap_content" />
+	    	
+	    <!-- Hidrômetro -->
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+		              android:id="@+id/llAnormalidade" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    
+	    	<ImageView android:id="@+id/imgAnormalidade" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                       android:layout_marginRight="30px" android:layout_marginTop="15px" android:layout_marginBottom="15px" />
+	    	
+	    	<TextView android:id="@+id/anormalidadeTitulo" android:textColor="#FFFFFF" android:textStyle="bold" 
+                      android:text="@string/str_anormalidade" android:paddingTop="25px" android:layout_width="fill_parent" 
+                      android:layout_height="wrap_content" />
+			        	
+	    </LinearLayout>
+	    <ImageView android:src="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	    
+     
+	    <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                   android:layout_gravity="center" />
+    	
+    	<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_weight="0" 
+              android:background="#000000" />
+	</LinearLayout>    
+</ScrollView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/fundotela"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:clickable="true" android:padding="3dip">
+            
+	<LinearLayout android:orientation="vertical" 	    
+	    android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="200dip"
+	    android:background="@drawable/fundobranco_bg" android:paddingBottom="10dip">
+			
+			<!-- HEAD -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"
+		        android:layout_margin="6dip"    
+		    	android:orientation="horizontal"  android:background="#000000">
+		    
+		    <TextView android:layout_width="fill_parent" android:gravity="center" 
+			    	android:padding="5dp"  android:layout_height="wrap_content" android:text="@string/str_info_gerais" android:textColor="#ffffff" />
+		    
+		    </LinearLayout>	
+			
+			<!-- IMOVEL + ENDERECO -->		
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"
+		        android:layout_marginTop="1dip" android:layout_marginBottom="3dip"  
+		    	android:orientation="vertical"  >
+		    	
+		    	<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"
+		    		android:orientation="horizontal"  android:layout_marginLeft="6dip">
+		    		
+		    		<TextView android:id="@+id/usuario"
+			        	android:layout_width="wrap_content" android:textSize="16sp" android:layout_height="wrap_content"
+			        	android:textColor="#000000" />
+			     </LinearLayout>
+		    	
+		    	<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"
+		    		android:orientation="horizontal"  android:layout_marginLeft="6dip">
+			    	
+					 <TextView android:id="@+id/endereco"
+				        android:layout_width="wrap_content" android:textSize="12sp" android:layout_height="wrap_content"
+				        android:textColor="#000000" />
+				</LinearLayout>	
+			</LinearLayout>	
+					
+		    <LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1.2dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout>  
+			
+			<!-- Situacao Água -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"   
+		    	android:orientation="horizontal" >
+			    	
+			    <TextView android:layout_width="wrap_content" android:textStyle="bold"
+			    	android:padding="5dp"  android:layout_height="wrap_content" android:text="@string/str_info_ligacao_agua" android:textColor="#000000" />
+			
+				 <TextView android:id="@+id/ligacaoAgua"
+			        android:layout_width="wrap_content" android:textSize="14sp" android:layout_height="wrap_content"
+			        android:textColor="#000000" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1.2dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout>  
+			
+			<!-- Situação Esgoto -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"   
+		    	android:orientation="horizontal" android:layout_marginBottom="10dip">
+			    	
+			    <TextView android:layout_width="wrap_content" android:textStyle="bold"
+			    	android:padding="5dp"  android:layout_height="wrap_content" android:text="@string/str_info_ligacao_esgoto" android:textColor="#000000" />
+			
+				 <TextView android:id="@+id/ligacaoEsgoto"
+			        android:layout_width="wrap_content" android:textSize="15sp" android:layout_height="wrap_content"
+			        android:textColor="#000000" />
+			
+			</LinearLayout>	
+			
+			<!-- Tabela Economias / Cod Sub / Sub -->
+			<TableLayout android:id="@+id/tabelaCategorias" android:layout_marginBottom="-5dp"
+				android:layout_marginTop="-5dp" android:layout_marginLeft="5dp"  android:layout_marginRight="5dp" 
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*">
+			
+				<TableRow >
+					<TextView style="@style/row" android:background="@drawable/tab_bg_cell" android:textColor="#000000" android:layout_marginRight="1dip"
+						android:text="@string/str_info_economias" android:paddingLeft="4dip" />
+					
+					<TextView style="@style/row" android:background="@drawable/tab_bg_cell" android:textColor="#000000" 
+						android:text="@string/str_info_codigo" />
+					
+					<TextView style="@style/row" android:background="@drawable/tab_bg_cell" android:textColor="#000000" android:paddingLeft="1dip" android:layout_marginLeft="1dip"
+						android:text="@string/str_info_subcategoria" />
+				</TableRow>
+			
+			</TableLayout>
+			
+	
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:layout_marginTop="10dip"   
+		    	android:orientation="horizontal" >
+			    	
+			    <TextView android:layout_width="wrap_content"  android:textStyle="bold"
+			    	android:padding="5dp"  android:layout_height="wrap_content" android:text="@string/str_info_matricula" android:textColor="#000000" />
+			
+				 <TextView android:id="@+id/matricula"
+			        android:layout_width="wrap_content" android:textSize="15sp" android:layout_height="wrap_content"
+			        android:textColor="#000000" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout>  
+					
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"   
+		    	android:orientation="horizontal" >
+			    	
+			    <TextView android:layout_width="wrap_content"  android:textStyle="bold"
+			    	android:padding="5dp"  android:layout_height="wrap_content" android:text="@string/str_info_inscricao" android:textColor="#000000" />
+			
+				 <TextView android:id="@+id/inscricao"
+			        android:layout_width="wrap_content" android:textSize="15sp" android:layout_height="wrap_content"
+			        android:textColor="#000000" />
+			
+			</LinearLayout>	
+			
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal" 
+				android:layout_marginTop="2dip">
+				<View android:layout_width="fill_parent" android:layout_height="1dip" android:layout_marginLeft="6dip" android:layout_marginRight="6dip" android:background="#bac2ca"/>
+			</LinearLayout>  
+			
+			<!-- Sequencial da rota -->
+			<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"   
+		    	android:orientation="horizontal" android:layout_marginBottom="10dip" >
+			    	
+			    <TextView android:layout_width="wrap_content" android:padding="5dp" android:textColor="#000000"
+			        android:layout_height="wrap_content" android:text="@string/str_sequencial"  android:textStyle="bold" />
+			
+				 <TextView android:id="@+id/sequencial"
+			        android:layout_width="wrap_content" android:textSize="15sp" android:layout_height="wrap_content"
+			        android:textColor="#000000" />
+			
+			</LinearLayout>		
+						
+	</LinearLayout>
+</ScrollView>

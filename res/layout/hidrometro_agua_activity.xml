@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:background="@drawable/bg"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout android:background="#ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:minHeight="1280dp">
+	
+
+
+	
+		<TextView android:layout_width="fill_parent" android:paddingLeft="25dp" android:paddingRight="15dp" 
+			android:layout_height="wrap_content" android:paddingTop="5dp" android:paddingBottom="5dp"  
+	        android:id="@+id/endereco" android:background="#0f0f0f" android:textColor="#ffffff" />
+
+	</LinearLayout>        
+    <LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"   
+    	android:orientation="horizontal" android:layout_marginTop="10dp" >
+	    
+	    <TextView  android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content" android:padding="5dp"  android:layout_height="wrap_content"
+        android:text="Hidrômetro: "  android:textColor="#ffffff" />
+
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+        android:id="@+id/hidrometro" android:textStyle="bold" android:textColor="#ffffff" />
+        
+        <TextView android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"  android:layout_height="wrap_content"
+        android:text="Loc Inst: "  android:textColor="#ffffff" />
+
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/local" android:textStyle="bold" android:textColor="#ffffff" />
+        
+   </LinearLayout>
+   
+   <TextView android:layout_marginLeft="15dp" android:background="#bac2ca" 
+   android:layout_width="fill_parent" android:layout_height="1dp" android:layout_margin="5dp"/>
+   
+   <TextView  android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content" android:padding="5dp"  android:layout_height="wrap_content"
+        android:text="Leitura: "  android:textColor="#ffffff" />
+        
+   <EditText android:layout_marginLeft="15dp" android:inputType="number"
+        android:layout_width="270dp" android:padding="5dp" android:layout_height="wrap_content"
+        android:textColor="#000000" android:id="@+id/leitura" />
+   
+   <TextView android:layout_marginLeft="15dp" android:background="#bac2ca" 
+   android:layout_width="fill_parent" android:layout_height="1dp" android:layout_margin="5dp"/>
+   
+   <TextView android:text="Anormalidade:" android:layout_height="wrap_content" android:textColor="#ffffff"
+   android:layout_marginLeft="20dp" android:layout_width="fill_parent"/>
+   
+   <LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"   
+    	android:orientation="horizontal" android:layout_marginTop="6dp" >
+	    
+	    <EditText android:layout_marginLeft="15dp" android:layout_width="70dp" android:id="@+id/idAnormalidade"
+	    android:padding="5dp" android:inputType="number"  android:layout_height="wrap_content" android:textColor="#000000" />
+        
+        <Spinner android:layout_marginLeft="6dp" android:id="@+id/anormalidade"
+        android:layout_width="225dp" android:layout_marginTop="-25dp" android:layout_height="wrap_content" />
+        
+   </LinearLayout>
+   
+
+</LinearLayout>

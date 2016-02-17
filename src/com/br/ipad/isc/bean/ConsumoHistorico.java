@@ -21,7 +21,6 @@ import com.br.ipad.isc.util.Util;
  * @since 08/03/2012
  */
 public class ConsumoHistorico extends ObjetoBasico implements Serializable {
-
 	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
@@ -39,6 +38,7 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 	private Integer diasConsumo;
 	private LeituraAnormalidade anormalidadeLeituraFaturada; 
 	private Date ultimaAlteracao;
+	private Integer numeroMesMotivoRevisao;
 	
 	/* Construtor Vazio */
 	public ConsumoHistorico() {
@@ -51,15 +51,16 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 		consumoCobradoMesOriginal = 0;
 		leituraAtual = 0;
 		tipoConsumo = 0;
+		numeroMesMotivoRevisao = 0;
 	}
-	
+
 	/* Construtor Mínimo */
 	public ConsumoHistorico(Integer consumoCobradoMes, Integer tipoConsumo) {
 		super();
 		this.consumoCobradoMes = consumoCobradoMes;
 		this.tipoConsumo = tipoConsumo;
 	}
-	
+
 	public Integer getId() {
 		return id;
 	}
@@ -76,7 +77,6 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 	public void setIdString(String id) {
 		this.id = Util.verificarNuloInt(id);
 	}
-	
 	public Integer getTipoLigacao() {
 		return tipoLigacao;
 	}
@@ -158,18 +158,28 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 	public void setUltimaAlteracao(Date ultimaAlteracao) {
 		this.ultimaAlteracao = ultimaAlteracao;
 	}
-	private static String[] colunas = new String[] { ConsumosHistoricos.ID, ConsumosHistoricos.MATRICULA, 
-	                                       ConsumosHistoricos.TIPOLIGACAO, ConsumosHistoricos.CONSUMOMEDIDO,  ConsumosHistoricos.COSNUMOCOBRADO,
-	                                       ConsumosHistoricos.CONSUMOCOBRADOMICRO, ConsumosHistoricos.CONSUMORATEIO,  ConsumosHistoricos.CONSUMOCOBSEMCONTRATODEMANDA,
-	                                       ConsumosHistoricos.CONSUMOCOBRADOORIGINAL, ConsumosHistoricos.LEITURAATUAL,  ConsumosHistoricos.TIPOCONSUMO,
-	                                       ConsumosHistoricos.ANORMALIDADECONSUMO, ConsumosHistoricos.DIASCONSUMO,  ConsumosHistoricos.ANORMLEITURAFATURADA,
-	                                       ConsumosHistoricos.ULTIMAALTERACAO	                                       
+	public Integer getNumeroMesMotivoRevisao() {
+		return numeroMesMotivoRevisao;
+	}
+	public void setNumeroMesMotivoRevisao(Integer numeroMesMotivoRevisao) {
+		this.numeroMesMotivoRevisao = numeroMesMotivoRevisao;
+	}
+
+	private static String[] colunas = new String[] {
+		ConsumosHistoricos.ID, ConsumosHistoricos.MATRICULA, 
+		ConsumosHistoricos.TIPOLIGACAO, ConsumosHistoricos.CONSUMOMEDIDO,
+		ConsumosHistoricos.COSNUMOCOBRADO, ConsumosHistoricos.CONSUMOCOBRADOMICRO,
+		ConsumosHistoricos.CONSUMORATEIO,  ConsumosHistoricos.CONSUMOCOBSEMCONTRATODEMANDA,
+		ConsumosHistoricos.CONSUMOCOBRADOORIGINAL, ConsumosHistoricos.LEITURAATUAL,
+		ConsumosHistoricos.TIPOCONSUMO,	ConsumosHistoricos.ANORMALIDADECONSUMO,
+		ConsumosHistoricos.DIASCONSUMO, ConsumosHistoricos.ANORMLEITURAFATURADA,
+		ConsumosHistoricos.ULTIMAALTERACAO, ConsumosHistoricos.MESMOTIVOREVISAO
 	};
-	
-	public String[] getColunas(){
+
+	public String[] getColunas() {
 		return colunas;
-	}	
-	
+	}
+
 	public static final class ConsumosHistoricos implements BaseColumns {
 		public static final String ID = "CSHI_ID";
 		public static final String MATRICULA = "IMOV_ID";
@@ -186,6 +196,7 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 		public static final String DIASCONSUMO = "CSHI_NNDIASCONSUMO";
 		public static final String ANORMLEITURAFATURADA = "LTAN_ID";
 		public static final String ULTIMAALTERACAO = "CSHI_TMULTIMAALTERACAO";
+		public static final String MESMOTIVOREVISAO = "CSHI_NNMESMOTIVOREVISAO";
 	}
 
 	public String getNomeTabela(){
@@ -208,13 +219,14 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 		public final String DIASCONSUMO = " INTEGER NULL";
 		public final String ANORMLEITURAFATURADA = " CONSTRAINT [FK2_CONSUMO_HISTORICO] REFERENCES [leitura_anormalidade]([LTAN_ID]) ON DELETE RESTRICT ON UPDATE RESTRICT";
 		public final String ULTIMAALTERACAO = " INTEGER NOT NULL";
-		
+		public final String MESMOTIVOREVISAO = " INTEGER NULL";
+
 		private String[] tipos = new String[] {ID, MATRICULA, 
 	        TIPOLIGACAO, CONSUMOMEDIDO,  COSNUMOCOBRADO,
 	        CONSUMOCOBRADOMICRO, CONSUMORATEIO,  CONSUMOCOBSEMCONTRATODEMANDA,
 	        CONSUMOCOBRADOORIGINAL, LEITURAATUAL,  TIPOCONSUMO,
 	        ANORMALIDADECONSUMO, DIASCONSUMO,  ANORMLEITURAFATURADA,
-	        ULTIMAALTERACAO};	
+	        ULTIMAALTERACAO, MESMOTIVOREVISAO};	
 
 		public String[] getTipos(){
 			return tipos;
@@ -242,12 +254,13 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 			values.put(ConsumosHistoricos.ANORMLEITURAFATURADA, getAnormalidadeLeituraFaturada().getId());
 		}
 		values.put(ConsumosHistoricos.ULTIMAALTERACAO, (new Date()).getTime());
+		values.put(ConsumosHistoricos.MESMOTIVOREVISAO, getNumeroMesMotivoRevisao());
+
 		return values;
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public ArrayList<ConsumoHistorico> preencherObjetos(Cursor cursor) {		
-			
 		int codigo = cursor.getColumnIndex(ConsumosHistoricos.ID);
 		int anormCons = cursor.getColumnIndex(ConsumosHistoricos.ANORMALIDADECONSUMO);
 		int anormLeitFaturada = cursor.getColumnIndex(ConsumosHistoricos.ANORMLEITURAFATURADA);
@@ -263,7 +276,8 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 		int tipoConsumo = cursor.getColumnIndex(ConsumosHistoricos.TIPOCONSUMO);
 		int tipoLigacao = cursor.getColumnIndex(ConsumosHistoricos.TIPOLIGACAO);				
 		int ultimaAlteracao = cursor.getColumnIndex(ConsumosHistoricos.ULTIMAALTERACAO);
-						
+		int numeroMesMotivoRevisao = cursor.getColumnIndex(ConsumosHistoricos.MESMOTIVOREVISAO);
+
 		ArrayList<ConsumoHistorico> consumosHistoricos = new ArrayList<ConsumoHistorico>();
 		do {	
 			ConsumoHistorico consumoHistorico = new ConsumoHistorico();
@@ -298,6 +312,7 @@ public class ConsumoHistorico extends ObjetoBasico implements Serializable {
 			consumoHistorico.setTipoConsumo(Util.getIntBanco(cursor, ConsumosHistoricos.TIPOCONSUMO, tipoConsumo));	
 			consumoHistorico.setTipoLigacao(Util.getIntBanco(cursor, ConsumosHistoricos.TIPOLIGACAO, tipoLigacao));		
 			consumoHistorico.setUltimaAlteracao(cursor.getLong(ultimaAlteracao));
+			consumoHistorico.setNumeroMesMotivoRevisao(cursor.getInt(numeroMesMotivoRevisao));
 	
 			consumosHistoricos.add(consumoHistorico);
 			

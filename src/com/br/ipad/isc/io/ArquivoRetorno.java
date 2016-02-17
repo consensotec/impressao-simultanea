@@ -273,14 +273,15 @@ public class ArquivoRetorno extends ControladorBasico {
 			
 			// 33 - Numero coordenada Y  (Longitude) 
 			registrosTipo1.append(Util.formatarCampoParaConcatenacao( imovel.getNumeroCoordenadaY() ));
-						
+
+			// 34 - Mes do motivo de revisao 
+			registrosTipo1.append(Util.formatarCampoParaConcatenacao(consumoAgua.getNumeroMesMotivoRevisao()));
+
 			//Quebra de linha
 			registrosTipo1.append("\n");
 
 //			System.out.println(registrosTipo1);
 		}
-		
-		
 
 		if (consumoEsgoto != null) {
 
@@ -437,6 +438,9 @@ public class ArquivoRetorno extends ControladorBasico {
 			
 			// 33 - Numero coordenada Y  (Longitude) 
 			registrosTipo1.append(Util.formatarCampoParaConcatenacao( imovel.getNumeroCoordenadaY() ));
+
+			// 34 - Mes do motivo de revisao 
+			registrosTipo1.append(Util.formatarCampoParaConcatenacao(consumoEsgoto.getNumeroMesMotivoRevisao()));
 			
 			//Quebra de linha
 			registrosTipo1.append("\n");

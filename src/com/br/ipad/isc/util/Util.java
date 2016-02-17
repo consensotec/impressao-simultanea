@@ -17,6 +17,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collection;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Vector;
@@ -2162,6 +2163,8 @@ public class Util {
 	 * 
 	 */
 	public static String[] dividirString(String mensagem, int max) {
+		if (mensagem == null)
+			return null;
 
 		// Encontramos em quantas strings precisaremos dividir
 		short qtdLinhas = (short) (mensagem.length() / max);
@@ -3053,4 +3056,14 @@ public class Util {
 				return new Short(valor.trim());
 			}
 		}
+
+	/**
+	 * Retorna true se a coleção for nula ou vazia
+	 *
+	 * @author André Miranda
+	 * @date 26/10/2015
+	 */
+	public static boolean isVazioOrNulo(Collection<?> colecao) {
+		return colecao == null || colecao.isEmpty();
+	}
 }

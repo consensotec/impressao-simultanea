@@ -381,7 +381,12 @@ public class TabsActivity extends BaseTabActivity implements  OnTabChangeListene
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
 				// TODO Auto-generated method stub
 				if(keyCode == KeyEvent.KEYCODE_ENTER  && event.getAction()==0){
-					clickBotaoImprimir();
+					if ( imovel.isCondominio() ){
+						chamarProximo = true;
+						chamaProximo(imovel.getPosicao(),chamarProximo);
+					} else {
+						clickBotaoImprimir();
+					}
 				}
 				return false;
 			}

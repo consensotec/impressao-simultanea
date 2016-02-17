@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:id="@+id/llLegenda"
+    android:layout_height="fill_parent" android:orientation="horizontal"
+    >
+        
+   <ImageView android:id="@+id/imagemLegenda"
+        android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"/>
+    	
+	<TextView 
+		android:id="@+id/legenda" 
+	    android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:textColor="#000000" android:paddingLeft="5dip"
+    	android:textSize="13dip" android:paddingTop="2dip" 
+    	android:layout_gravity="center_horizontal" android:gravity="top"
+	   />  
+	   
+	
+</LinearLayout>
